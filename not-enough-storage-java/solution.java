@@ -1,0 +1,1 @@
+import java.util.*;class G{static int P(int n){if(n<2)return 0;for(int i=2;i<n;i++)if(n%i==0)return 0;return 1;}public static void main(String[] args){Scanner p=new Scanner(System.in);int n,a,s=0;n=p.nextInt();for(int i=0;i<n;i++){a=p.nextInt();if(P(a)*P(i+1)==1)s++;}System.out.print(s);}}

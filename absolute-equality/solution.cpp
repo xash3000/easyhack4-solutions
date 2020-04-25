@@ -3,12 +3,13 @@
 using namespace std;
 
 int main(){
-    long long a, b;
+    long long a, b, c;
     cin >> a >> b;
 
-    if(a % 2 != b % 2){
+    if((a+b) % 2 == 1){
         cout << "IMPOSSIBLE";
     }else{
-        cout << int((a + b) / 2);
+        c = (a + b) / 2;
+        cout << c;
     }
 }
